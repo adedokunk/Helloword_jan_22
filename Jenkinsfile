@@ -17,13 +17,13 @@ pipeline {
         stage('Code Build') {
             steps {
                 sh 'mvn clean package'
-                sleep(5)
+                sleep(4)
             }
         }
         stage('Test') {
             steps {
                 sh 'mvn test'
-                sleep(5)
+                sleep(4)
             }
         }
         stage('Build Image') {
