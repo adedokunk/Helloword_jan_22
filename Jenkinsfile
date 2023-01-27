@@ -17,7 +17,7 @@ pipeline {
         stage('Code Build') {
             steps {
                 sh 'mvn clean package'
-                sleep(4)
+                sleep(5)
             }
         }
         stage('Test') {
